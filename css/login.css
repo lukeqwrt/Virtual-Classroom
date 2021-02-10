@@ -147,7 +147,7 @@ html{
     border: none;
     border-radius: 40px;
     margin-top: 1rem;
-
+    padding-left: 1rem;
 }
 .main .mybox form label:nth-child(1){
     grid-row: 1/2;
