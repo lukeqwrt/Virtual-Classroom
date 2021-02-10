@@ -5,3 +5,4 @@ btn.addEventListener('click', () => {
         modal.classList.add('active')
 
 })
+AOS.init();

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Classroom</title>
     <link rel="stylesheet" href="./css/landing.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" href="./img/logotop.png">
+
 </head>
 <body>
 
@@ -27,7 +31,9 @@
     </div>
 
     <div class="main">
-        <div class="box">
+        <div class="box" data-aos="fade-zoom-in"
+        data-aos-duration="1000">
+
             <div class="circle">
                 <img src="./img/WEBSITE.png" alt="">
             </div>
@@ -47,6 +53,9 @@
         </div>
     </div>
 
-   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

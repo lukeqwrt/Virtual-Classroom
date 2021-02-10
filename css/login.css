@@ -118,7 +118,7 @@ html{
 .main .mybox{
     height: 351px;
     width: 362px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 8px;
     margin-bottom: 5rem;
     background: #8F98E2;

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="./css/signupform.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" href="./img/logotop.png">
 </head>
 <body>
     <div class="my-header">
@@ -26,49 +29,42 @@
     </div>
 
     <div class="mymain">
-        <div class="mybox">
-            <form action="">
+        <div class="mybox" data-aos="fade-zoom-in"
+        data-aos-duration="1000">
+        
+            <form action="./success.html">
                 <label>
                     <p>First Name</p>
-                    <input type="text">
+                    <input class="myinput" type="text" required/>
                 </label>
                 <label>
                     <p>Last Name</p>
-                    <input type="text">
+                    <input class="myinput" type="text" required/>
                 </label>
                 <label>
                     <p>Email Address</p>
-                    <input type="text">
+                    <input class="myinput" type="text" required/>
                 </label>
                 <label>
                     <p>Password</p>
-                    <input type="text">
+                    <input class="myinput" type="password" required/>
                 </label>
                 <label>
                     <p>Email Address</p>
-                    <input type="text">
+                    <input class="myinput" type="text" required/>
                 </label>
     
-         
+                <input class="btn" type="submit" value="CONFIRM">
+                    
+                
             </form>
-                 <div class="mybtn">
-                    <button>CONFIRM</button>
-                </div>
+                 
         </div>
     </div>
 
-    <div class="bg-modal">
-        <div class="alert-modal">
-            <div class="content">
-                <h3>YOU SUCCESSFULLY SIGNED UP!</h3>
-                <p>Please log in again to continue</p>
-                <div class="btn">
-                    <button onclick="window.location.href='/index.html'">LOG IN</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="./js/student.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/prof.js"></script>
 </body>
 </html>

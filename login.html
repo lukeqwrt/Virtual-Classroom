@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOG IN</title>
     <link rel="stylesheet" href="./css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- icon -->
+        <link rel="icon" href="./img/logotop.png">
 </head>
 <body>
 
@@ -25,15 +28,16 @@
     </div>
 
     <div class="main">
-        <div class="mybox">
+        <div class="mybox" data-aos="fade-zoom-in"
+        data-aos-duration="1000">
             <form action="/index.html" class="my-form">
                 <label>
                     <p>Email Address</p>
-                    <input type="text">
+                    <input type="text" required/>
                 </label>
                 <label>
                     <p>Password</p>
-                    <input type="password">
+                    <input type="password" required/>
                 </label>
     
                 <div class="mybtn">
@@ -43,11 +47,10 @@
             </form>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        const gotoLanding = () => {
-    
-}
-    </script>
+        AOS.init();
+      </script>
+
 </body>
 </html>

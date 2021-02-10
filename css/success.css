@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -42,13 +43,14 @@ html{
     height: 70px;
     width: 70px;
 
-
    
 }
+
 .my-header .black-line .gray-line .header-content .logo img {
     height: 100%;
     width: 100%;
 }
+
 .my-header .black-line .gray-line .header-content .title{
     margin-left: 2rem;
 
@@ -114,21 +116,35 @@ html{
     background-size: cover;
     background-attachment: fixed;
 }
-
-.main .box{
-    height: 99px;
+.main .success{
     width: 429px;
+    height: 183px;
     background: #8F98E2;
-    margin-bottom: 4rem;
-    /* flex */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.1rem solid black;
+
+    border: 1px solid black;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
-.main .box button{
+.main .success .content{
+    text-align: center;
+}
+
+.main .success .content h3{
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+.main .success .content p{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.main .success .content .btn button{
     width: 112px;
     height: 40px;
     border-radius: 40px;
@@ -140,16 +156,8 @@ html{
     cursor: pointer;
     transition: all 0.3s;
 }
-.main .box button:hover{
+
+.main .success .content .btn button:hover{
     background:#F8A895;
     color: #25318D;
-}
-
-.main .box button:nth-child(1){
-    margin-right: 0.9rem;
-}
-
-.main .box button:nth-child(2){
-    margin-left: 0.9rem;
-    
 }
