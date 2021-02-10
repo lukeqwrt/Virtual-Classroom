@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family:'Poppins';
+}
+
+.my-header{
+    height: 19vh;
+    background: #8F98E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-header .black-line{
+    height: 15vh;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-header .black-line .gray-line{
+    height: 13vh;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;    
+    position: relative;
+}
+
+.my-header .black-line .gray-line .header-content{
+ display: flex;
+ position: absolute;  
+ left: 12%;
+ top: 50%;
+ transform: translate(0, -50%);
+}
+.my-header .black-line .gray-line .header-content .logo{
+    height: 70px;
+    width: 70px;
+
+
+   
+}
+.my-header .black-line .gray-line .header-content .logo img {
+    height: 100%;
+    width: 100%;
+}
+.my-header .black-line .gray-line .header-content .title{
+    margin-left: 2rem;
+
+}
+.my-header .black-line .gray-line .header-content .title h3{
+    /* font-size: 40px; */
+    font-size: clamp(1rem, 4vw, 40px);
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 3px rgb(204, 204, 204),0 0 10px rgba(0, 0, 0, 0.5);
+ 
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.my-header .black-line .gray-line .header-content .title p{
+    color: #11153F;
+    font-family: sans-serif;
+
+}    
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+    .my-header .black-line .gray-line .header-content{
+        display: flex;
+        position: absolute;  
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+       }
+       .my-header .black-line .gray-line .header-content .title{
+        margin-left: 1rem;
+    
+    }
+    .my-header .black-line .gray-line .header-content{
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .my-header .black-line .gray-line .header-content{
+        display: flex;
+        position: absolute;  
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+       }
+    .my-header .black-line .gray-line .header-content .title{
+        margin-left: 1rem;
+    
+    }
+    .my-header .black-line .gray-line .header-content{
+        margin: 0 1rem;
+    }
+
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main .mybox{
+    height: 351px;
+    width: 362px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    background: #8F98E2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .mybox form{
+    /* grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+}
+.main .mybox form label p{
+ font-size: 22px;
+ font-family: sans-serif;
+}
+.main .mybox form label input{
+    width: 330px;
+    height: 33px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 1rem;
+
+}
+.main .mybox form label:nth-child(1){
+    grid-row: 1/2;
+    align-self: end;
+}
+
+.main .mybox form label:nth-child(2){
+    grid-row: 2/3;
+    align-self: center;
+}
+
+
+.main .mybox form .mybtn button{
+    width: 112px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: #25318D;
+    color: #F8A895;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.main .mybox form .mybtn button:hover{
+    background:#F8A895;
+    color: #25318D;
+}
