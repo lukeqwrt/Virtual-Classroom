@@ -437,6 +437,7 @@ grid-template-rows: auto;
     background: white;
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-left: 3rem;
 }
 
 .main .lec .lecact .nav{
