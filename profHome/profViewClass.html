@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="../css/profViewClass.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="my-header" >
+        <div class="black-line">
+            <div class="gray-line">
+                <div class="header-content">
+                    <div class="mycontent">
+                       
+                        <div class="logo">
+                            <img src="../img/logotop.png" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>EN LINEA CLASSROOM</h3>
+                            <p>Your online classroom and examination maker</p>
+                        </div>  
+                    </div>
+                    
+                    
+                    <div class="login-icon">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
+
+                    <div class="nav">
+                        <ul class="list">
+                            <li data-tab-target="#announce" class="active tab">Announcements</li>
+                            <li data-tab-target="#lec" class="tab">Lectures & Activities</li>
+                            <li data-tab-target="#chat" class="tab">Chat Room</li>
+                            <li data-tab-target="#att" class="tab">Attendance</li>
+                            <li data-tab-target="#rec" class="tab">Recitations</li>
+                            <li data-tab-target="#grades" class="tab">Grades</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+    
+       
+        <div  id="announce" data-tab-content class="announs active">
+                <form action="">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Write Something">
+                </form>
+
+                <div class="pin-section">
+                    <div class="mypin">
+                        <h3>Pinned Announcements</h3>
+                        <div class="icon">
+                            <i class="fas fa-thumbtack"></i>
+                        </div>
+
+                        <div class="content">
+                            <h4>LONG QUIZ</h4>
+                            <p>There will be a long quiz regarding our very first topic this sem up until the topic we discussed today. Do read your notes and review the presentations posted in our classroom. Thank you and Godbless everyone!</p>
+                        </div>
+
+                        <div class="mybuttons">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                            <button>Unpin</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ann">
+                    <h3>Announcements</h3>
+                    <div class="here">
+
+                        <div class="row">
+                            <div class="iconn">
+                                <i class="fas fa-thumbtack"></i>
+                            </div>
+                            <div class="contentt">
+ 
+                                <p>Please be mindful about the instructions I posted in your activities. Failure in following the instructions will have a deduction in your final score.</p>
+                            </div>
+                            <div class="mybuttonss">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                                <button>Unpin</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="iconn">
+                                <i class="fas fa-thumbtack"></i>
+                            </div>
+                            <div class="contentt">
+                            
+                                <p>Checking of your systems and other documentations will be tomorrow. Please be on the meeting on time. Thank you.</p>
+                            </div>
+                            <div class="mybuttonss">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                                <button>Unpin</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="iconn">
+                                <i class="fas fa-thumbtack"></i>
+                            </div>
+                            <div class="contentt">
+                                <p>There will be a long quiz regarding our very first topic this sem up until the topic we discussed today. Do read your notes and review the presentations posted in our classroom. Thank you and Godbless everyone!</p>
+                            </div>
+                            <div class="mybuttonss">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                                <button>Unpin</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+        <div id="lec" class="lec"  data-tab-content>
+            <div class="sidebar">
+                <h3>To-Do</h3>
+                <p>Activity 1: Approaches to Inform System</p>
+                <p>Activity 2: Investigating System Requirements</p>
+                <p>Activity 3: SAD Documentation</p>
+                <p>Activity 4: GUI</p>
+                <p>MIDTERMS EXAM</p>
+                <p>FINAL EXAM</p>
+            </div>
+
+            <div class="lecact">
+                <div class="nav">
+                    <ul>
+                        <li>Lectures</li>
+                        <li>Activities</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+        </div>
+        <div id="chat" class="chat "  data-tab-content>
+            <div class="sidebar-chat">
+                <div class="people">
+                    <i class="fas fa-user"></i>
+                    <h3>PEOPLE</h3>
+                </div>
+            </div>
+
+            <div class="messages">
+                <div class="mymessage">
+                </div>
+                <div class="reply">
+                    <i class="fas fa-user"></i>
+                    <span></span>
+                </div>
+                <div class="reply">
+                    <i class="fas fa-user"></i>
+                    <span></span></div>
+                <div class="reply">   
+                    <i class="fas fa-user"></i>
+                    <span></span>
+                </div>
+
+                <div class="input-message">
+                    <div class="message-icon">
+                        <i class="fas fa-microphone"></i>
+                        <i class="fas fa-camera"></i>   
+                        <i class="fas fa-images"></i>
+                    </div>
+
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div id="att"  data-tab-content>
+        </div>
+        <div id="rec"  data-tab-content>
+        </div>
+        <div id="grades"  data-tab-content>
+  
+        </div>
+
+
+  
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/viewclass.js"></script>
+</body>
+</html>
