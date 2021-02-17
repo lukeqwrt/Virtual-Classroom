@@ -111,7 +111,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg');
+    background: linear-gradient(108.43deg, #4CA1AF -6.4%, #C4E0E5 104.26%);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -123,8 +123,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
     border-radius: 8px;
 }
 

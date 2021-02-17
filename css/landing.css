@@ -118,7 +118,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: linear-gradient(108.43deg, #4CA1AF -6.4%, #C4E0E5 104.26%);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -129,7 +129,7 @@ html{
     height: 391px;
     width: 362px;
     background: white;
-    border: 2px solid black;
+    /* border: 1px solid black; */
     border-radius: 8px;
 
     /* grid */
@@ -154,9 +154,9 @@ html{
     text-align: center;
 }
 .main .box .classroom h3{
-    font-size: 22px;
+    font-size: 25px;
     color: #0C6980;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-weight: 200;
     letter-spacing: 3px;
     word-spacing: 10px;
@@ -168,7 +168,7 @@ html{
 
 .main .box span{
     height: 3px;
-    width: 43px;
+    width: 200px;
     background: #0C6980;
 }
 .main .box .my-button button{
@@ -196,6 +196,8 @@ html{
 
 .main .box p{
     color: #0C6980;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }

@@ -109,7 +109,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg');
+    background: linear-gradient(108.43deg, #4CA1AF -6.4%, #C4E0E5 104.26%);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -125,7 +125,7 @@ html{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .main .box button{

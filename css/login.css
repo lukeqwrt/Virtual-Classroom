@@ -109,7 +109,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg');
+    background: linear-gradient(108.43deg, #4CA1AF -6.4%, #C4E0E5 104.26%);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -120,7 +120,7 @@ html{
     width: 362px;
     border-radius: 10px;
     background:white;
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
