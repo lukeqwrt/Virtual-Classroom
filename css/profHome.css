@@ -7,8 +7,8 @@ html{
 }
 
 .my-header{
-    height: 20vh;
-    background: #8F98E2;
+    height: 12vh;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +16,8 @@ html{
 
 .my-header .black-line{
     height: 15vh;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 3px solid blac;
+    border-bottom: 3px solid blck;
     
     display: flex;
     flex-direction: column;
@@ -26,8 +26,8 @@ html{
 
 .my-header .black-line .gray-line{
     height: 13vh;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;    
+    border-top: 2px solid gra;
+    border-bottom: 2px solid ray;    
     position: relative;
 
 
@@ -39,7 +39,7 @@ html{
 .my-header .black-line .gray-line .header-content{
 
     height: 100%;
-    width: 90%;
+    width: 91%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -48,18 +48,35 @@ html{
 }
 .my-header .black-line .gray-line .header-content .login-icon{
     display: flex;
+    align-items: center;
 }
 
 .my-header .black-line .gray-line .header-content .login-icon i{
-    font-size: 30px;
-    margin: 0 1rem;
+    font-size: 28px;
+    margin: 0 1.5rem;
+    transition: 0.4s;
+    color: gray;
+}
+
+
+.my-header .black-line .gray-line .header-content .login-icon i:hover{
+    color: #0C6980;
+    cursor: pointer;
+}
+.my-header .black-line .gray-line .header-content .login-icon .myprofile{
+    height: 48px;
+    width: 48px;
+}
+.my-header .black-line .gray-line .header-content .login-icon .myprofile img{
+    height: 100%;
+    width: 100%;
 }
 .my-header .black-line .gray-line .header-content .mycontent{
 display: flex;
 }
 .my-header .black-line .gray-line .header-content .mycontent .logo{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 
    
 }
@@ -74,16 +91,16 @@ display: flex;
 }
 
 .my-header .black-line .gray-line .header-content .mycontent .title{
-    margin-left: 2rem;
+    margin-left: 1rem;
 
 }
 .my-header .black-line .gray-line .header-content .mycontent .title h3{
     /* font-size: 40px; */
-    font-size: clamp(1rem, 4vw, 40px);
+    font-size: clamp(1rem, 4vw, 30px);
     font-family: sans-serif;
     font-weight: 100;
     text-shadow: 1px 3px rgb(204, 204, 204),0 0 10px rgba(0, 0, 0, 0.5);
- 
+ color: #0C6980;;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
@@ -186,31 +203,47 @@ display: flex;
 }
 
 .nav{
-    background: #8F98E2;
-    height: 4vh;
+    background: #0C6980;
+    height: 6vh;
 }
 
 .nav ul{
+    width: 95%;
+    margin: auto;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
     align-items: center;
     }
 .nav ul li{
     list-style: none;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 .nav ul li a{
     text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: 20px;
+    color: white;
+    font-family:'Poppins';
+    font-size: 17px;
     transition: 0.3s;
 }
 .nav ul li a:hover{
     color: white;
+    border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 768px){
+    .nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-family:'Poppins';
+        font-size: 17px;
+        transition: 0.3s;
+    }
+    .nav ul li a:hover{
+        color: #0C6980;
+        background: white;
+    }
     .nav{
         position: fixed;
         opacity: 0;
@@ -254,10 +287,11 @@ display: flex;
   
 }
 .main{
+    margin-top: 0.5rem;
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background: url('../img/5b12ae0ae52d5f71c7bd40d7f990ed2e.jpg');
     background-position: center;
     background-size: cover;
@@ -265,7 +299,7 @@ display: flex;
 }
 
 .main .opacity{
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%;
     display: flex;

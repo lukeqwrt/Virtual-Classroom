@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/signup.css">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="./css/login.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- icon -->
-    <link rel="icon" href="./img/logotop.png">
+        <!-- icon -->
+        <link rel="icon" href="./img/logotop.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- <div class="my-header">
         <div class="black-line">
             <div class="gray-line">
@@ -29,15 +33,29 @@
     </div> -->
 
     <div class="main">
-        <div class="box" data-aos="fade-zoom-in"
+        <div class="mybox" data-aos="fade-zoom-in"
         data-aos-duration="1000">
-            <button onclick="window.location.href='./login.html'">Student</button>
-            <button onclick="window.location.href='./loginTeacher.html'" >Teacher</button>
+            <form action="./teacher/Teacher-Home.html" class="my-form">
+                <label>
+                    <p>Email Address</p>
+                    <input type="text" required/>
+                </label>
+                <label>
+                    <p>Password</p>
+                    <input type="password" required/>
+                </label>
+    
+                <div class="mybtn">
+                    <button href="/">LOG IN</button>
+                </div>
+                
+            </form>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+
 </body>
 </html>

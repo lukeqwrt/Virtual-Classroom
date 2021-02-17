@@ -105,7 +105,7 @@ html{
 }
 
 .main{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,31 +118,31 @@ html{
 .main .box{
     height: 99px;
     width: 429px;
-    background: #8F98E2;
+    background: white;
     margin-bottom: 4rem;
     /* flex */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.1rem solid black;
     border-radius: 8px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
 }
 
 .main .box button{
     width: 112px;
     height: 40px;
-    border-radius: 40px;
+    border-radius: ;
     border: none;
-    background: #25318D;
-    color: #F8A895;
+    background: #0C6980;
+    color: white;
     font-weight: 800;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s;
 }
 .main .box button:hover{
-    background:#F8A895;
-    color: #25318D;
+    color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
 }
 
 .main .box button:nth-child(1){

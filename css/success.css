@@ -107,7 +107,7 @@ html{
 }
 
 .main{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,14 +119,13 @@ html{
 .main .success{
     width: 429px;
     height: 183px;
-    background: #8F98E2;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
 
     border: 1px solid black;
     border-radius: 8px;
-    margin-bottom: 2rem;
 }
 
 .main .success .content{
@@ -135,29 +134,32 @@ html{
 
 .main .success .content h3{
     font-size: 23px;
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 
 .main .success .content p{
     font-size: 20px;
-    font-family: sans-serif;
-    padding: 1rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding: 1rem 0;
 }
 
 .main .success .content .btn button{
     width: 112px;
     height: 40px;
-    border-radius: 40px;
+    border-radius: px;
     border: none;
-    background: #25318D;
-    color: #F8A895;
+    background: #0C6980;
+    color: white;
     font-weight: 800;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s;
+    margin-top: 0.2rem;
 }
 
 .main .success .content .btn button:hover{
-    background:#F8A895;
-    color: #25318D;
+    color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+
 }
