@@ -116,8 +116,8 @@ html{
 }
 
 .main .mybox{
-    height: 401px;
-    width: 362px;
+    height: 450px;
+    width: 399px;
     border-radius: 10px;
     background:white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -127,30 +127,33 @@ html{
 }
 
 .main .mybox form{
-    /* grid */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
     height: 100%;
     width: 90%;
+    margin: auto;
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     align-items: center;
-    justify-items: center;
 }
 .main .mybox form label p{
- font-size: 22px;
- font-family: 'Poppins';
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.main .mybox form label i {
+    margin-right: 0.5rem;
+    font-size: 20px;
+    color: gray;
 }
 .main .mybox form label input{
     font-family: 'Poppins';
-    width: 300px;
+    width: 100%;
     height: 33px;
     border: none;
-    margin-top: 1rem;
-    padding-left: 1rem;
-
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    background: rgb(235, 235, 235);
-    border-bottom: 1px solid black;    
+    margin-top: 0.4rem;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+    /* background: rgb(235, 235, 235); */
+    border-bottom: 1px solid gray; 
 }
 .main .mybox form label:nth-child(1){
     grid-row: 1/2;
@@ -164,7 +167,7 @@ html{
 
 
 .main .mybox form .mybtn button{
-    width: 112px;
+    width: 100%;
     height: 40px;
     border-radius: 0px;
     border: none; 
