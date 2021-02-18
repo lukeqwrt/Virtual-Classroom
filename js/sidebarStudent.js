@@ -9,3 +9,5 @@ mybars.addEventListener('click', () => {
 nav.addEventListener('click', ()=> {
     nav.classList.remove('active')
 })
+
+

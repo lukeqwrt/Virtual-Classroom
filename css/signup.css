@@ -109,7 +109,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(108.43deg, #4CA1AF -6.4%, #C4E0E5 104.26%);
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
