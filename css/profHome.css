@@ -7,6 +7,94 @@ html{
     
 }
 
+
+.signout-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    }
+    
+    .signout-container.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    
+    .signout-container .signout{
+        position: absolute;
+        right: 30px;
+        top: 90px;
+        height: 360px;
+        width: 350px;
+        background: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  repeat(4, 90px);
+    justify-items: center;
+    align-items: center;
+    }
+    .signout-container .signout .myprofile2{
+    height: 80px;
+    width: 80px;
+    }
+    .signout-container .signout .myprofile2 img{
+        height: 100%;
+        width: 100%;
+    }
+    .signout-container .signout .signout-content{
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+    .signout-container .signout .signout-content h3:nth-child(1){
+        margin: 1.5rem;
+    }
+    .signout-container .signout .signout-content h3:nth-child(2){
+        color: gray;
+    }
+    .signout-container .signout h3:nth-child(3){
+        font-size: 21px;
+        cursor: pointer;
+        width: 80%;
+        color: black;
+        text-align: center;
+        border: 1px solid gray;
+        transition: all 0.3s;
+        border-radius: 40px;
+        padding: 0.3rem;
+    }
+    .signout-container .signout h3:nth-child(3):hover{
+        background: rgb(238, 238, 238);
+        border: 1px solid black;
+        transition: all 0.3s;
+    }
+    .signout-container .signout button{
+        width: 112px;
+        height: 40px;
+        border: none;
+        background: #0C6980;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .signout-container .signout button:hover
+    {
+        color: white;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    }
+    
+
 .my-header{
     height: 12vh;
     background: white;
@@ -67,6 +155,7 @@ html{
 .my-header .black-line .gray-line .header-content .login-icon .myprofile{
     height: 48px;
     width: 48px;
+    cursor: pointer;
 }
 .my-header .black-line .gray-line .header-content .login-icon .myprofile img{
     height: 100%;
@@ -302,15 +391,16 @@ display: flex;
 
 .main .opacity{
     height: 100%;
-    width: 480px;
+    width: 420px;
     background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     border-top-right-radius: 10px;
 }
 
 
 .main .opacity .sidebar{
+    width: 420px;
     height: 100%;
-    width: 480px;
+    /* width: 480px; */
     border-top-right-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     position: relative;
@@ -320,7 +410,7 @@ display: flex;
     bottom: 15px;
     left: 30px;
     background: rgba(0, 0, 0, 0.4);
-    width: 389px;
+    width: 330px;
 border-radius: 10px;
     display: flex;
     align-items: center;
@@ -328,8 +418,11 @@ border-radius: 10px;
     color: white;
 }
 .main .opacity .sidebar .add p{
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 1rem;
+}
+.main .opacity .sidebar .add i{
+    font-size: 13px;
 }
 .main .opacity .sidebar .task-title{
     display: flex;
@@ -337,15 +430,15 @@ border-radius: 10px;
     align-items: center;
 }
 .main .opacity .sidebar .task-title h3{
-    font-size: 28px;
+    font-size: 21px;
     color: white;
     font-weight: lighter;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     margin: 0 1rem;
 }
 
 .main .opacity .sidebar .task-title i{
-    font-size: 28px;
+    font-size: 21px;
     color: white;
 }
 /* completed */
@@ -383,7 +476,7 @@ margin: 0 0.6rem;
     margin-bottom: 1rem;
 }
 .main .opacity .sidebar .completed .comp-container .my-child i{
-    font-size: 23px;
+    font-size: 19px;
 }
 .main .opacity .sidebar .completed .comp-container .my-child i:nth-child(1){
     padding: 0 1rem;
@@ -426,7 +519,7 @@ cursor: pointer;
 }
 .main .opacity .sidebar .completed .comp-container .my-child .child-content .date i{
     padding: 0;
-    font-size: 18px;
+    font-size: 14px;
     color: black;
 }
 .main .opacity .sidebar .completed .comp-container .my-child .child-content h4{
@@ -434,11 +527,12 @@ cursor: pointer;
 }
 .main .opacity .sidebar .completed .comp-container .my-child .child-content .date p{
     margin-left: 0.9rem;
+    font-size: 14px;
 }
 /* right */
 .main  .class-overview{
     border-top-left-radius: 10px;
-    width: 990px;
+    width: 895px;
     height: 100%;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -465,15 +559,15 @@ cursor: pointer;
 .main  .class-overview .container-classes .row-classes{
     /* background: lightblue; */
     border-bottom: 1px solid gray;
-    height: 130px;
+    height: 100px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 110px 1fr;
     align-items: center;
 }
 .main  .class-overview .container-classes .row-classes .icon{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     justify-self: center;
     background: #0C6980;
     border-radius: 100%;
@@ -485,14 +579,14 @@ cursor: pointer;
 }
 .main  .class-overview .container-classes .row-classes .content{
     margin-left: 0.5rem;
-}
+} 
 .main  .class-overview .container-classes .row-classes .content .content-title{
     display: flex;
     justify-content: space-between;
     align-items: center;    
 }
 .main  .class-overview .container-classes .row-classes .content .content-title h4{
-    font-size: 25px;
+    font-size: 17px;
 }
 .main  .class-overview .container-classes .row-classes .content .content-title h4:nth-child(2){
     font-size:16px;
