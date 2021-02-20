@@ -564,6 +564,7 @@ cursor: pointer;
     grid-auto-flow: column;
     grid-template-columns: 110px 1fr;
     align-items: center;
+    cursor: pointer;
 }
 .main  .class-overview .container-classes .row-classes .icon{
     height: 60px;

@@ -33,3 +33,9 @@ signout.addEventListener('click', ()=> {
 // function remub(){
 //     me.classList.remove('active')
 // }
+
+const rowClass = document.querySelector('.row-classes')
+
+rowClass.addEventListener('click', () => {
+    window.location.href = "../teacher/Teacher-View-Class.html"
+})
