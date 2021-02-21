@@ -1,12 +1,3 @@
-
-const hello = document.querySelector('#here')
-
-
-hello.addEventListener('click', () => {
-    window.location.href='../teacher/mystudents.html'
-})
-
-
 const myprofile = document.querySelector('.myprofile')
 const signout = document.querySelector('.signout-container')
 

@@ -15,7 +15,7 @@ nav.addEventListener('click', ()=> {
 const go = document.querySelector('.go')
 
 go.addEventListener('click', () => {
-     window.location.href='../teacher/sections.html'
+     window.location.href='../teacher/mystudents.html'
 })
 
 

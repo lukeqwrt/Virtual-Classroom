@@ -398,7 +398,7 @@ display: flex;
 }
 
 body{
-    background: rgb(230, 230, 230);
+    background: rgb(243, 243, 243);
 }
 .main{
     position: relative;
@@ -406,7 +406,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
 .main .announs{
 margin: 3rem 0rem;
 display: flex;
@@ -463,7 +462,7 @@ color: #0C6980;
     letter-spacing: 2px;
 }
 .main .announs .pin-section{
-    margin: 2rem 0rem;
+    margin-top: 2rem;
 }
 .main .announs .pin-section .mypin{
     height: 240px;
@@ -487,6 +486,8 @@ color: #0C6980;
     justify-content: start;
     align-items: center;
     padding: 0rem 1rem;
+    color: white;
+    letter-spacing: 1px;   
 }
 
 .main .announs .pin-section .mypin .icon{
@@ -553,6 +554,8 @@ color: #0C6980;
     justify-content: start;
     align-items: center;
     padding: 0.8rem 1rem;
+    color: white;
+    letter-spacing: 1px;
 }
 .main .announs .ann .here{
     background: white;
@@ -614,94 +617,82 @@ color: #0C6980;
 .main .lec{
     padding-bottom: 3rem;
     /* padding: 0.5rem calc((100vw - 800px) / 2); */
-  margin: 3rem;
-    width: 90%;
-display: grid;
-column-gap: rem;
-grid-auto-flow: column;
-grid-template-columns: 200px 1fr;
-grid-template-rows: 1fr;
-align-items: center;
-justify-items: center;
-position: absolute;
-overflow: hidden;
-}
-.main .lec .sidebar{
-    justify-self: start;
- grid-row: 1/2;
- grid-column: 1/2;
-height: 735px;
-width: 232px;
-background: white;
-border-radius: 10px;
+    margin: 3rem;
+    position: absolute;
 
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
 }
-
-.main .lec .sidebar h3{
-    font-size: 30px;
-    text-align: center;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main .lec .sidebar p{
-    font-size: 24px;
-    border-bottom: 1px solid black;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-}
-
 .main .lec .lecact{
-    width: 944px;
-    height: 735px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    width: 1000px;
+    border-radius: 10px;
+    padding: 3rem 0;
+}
+
+.main .lec .lecact .btn-create{
+    padding: 2rem 3rem;
+}
+.main .lec .lecact .btn-create button{
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.2s ease;
+}
+.main .lec .lecact .btn-create button:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+.main .lec .lecact .activity{
+    padding: 0.7rem 0;
+}
+.main .lec .lecact .activity .activity-child{
+margin: 0 3rem;
     background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr;
+}
+.main .lec .lecact .activity .activity-child i:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+    font-size: 40px;
+    justify-self: center;
+    padding: 1rem 0;
+    color: #0C6980;
+}
+.main .lec .lecact .activity .activity-child .title-act{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-left: 3rem;
+}
+.main .lec .lecact .activity .activity-child .title-act h3{
+    font-size: 25px;
+    padding-top: 0.7rem;
+}
+.main .lec .lecact .activity .activity-child .title-act .other {
+    padding: 0.7rem 0;
+}
+.main .lec .lecact .activity .activity-child .title-act .other p{
+    font-size: 16px;
 }
 
-.main .lec .lecact .nav{
-    height: 60px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+.main .lec .lecact .activity .activity-child i:nth-child(3){
+    color: #0C6980;
+    grid-column: 3/4;
+    font-size: 27px;
+    justify-self: center;
+    padding: 1rem 0;
+    color: #0C6980;
 }
-
-.main .lec .lecact .nav ul li{
-    list-style: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-} 
-.main .lec .lecact .nav ul li:hover{
-    padding-bottom: 0.5rem;
-    transition: 0.3s;
-}
-
-.main .lec .lecact .nav ul li:nth-child(1){ 
-    list-style: none;
-    grid-column: 1/2;
-} 
-
-.main .lec .lecact .nav ul li:nth-child(2){ 
-    list-style: none;
-    grid-column: 2/3;
-    
-} 
-.main .lec .lecact .nav ul{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-height: 100%;   
-display: grid;
-grid-auto-flow: column;
-grid-template-columns: 180px 180px 1fr;
-grid-template-rows: 1fr;
-align-items: center;
-justify-items: center;
-
-} 
+/* chat */
 .main .chat{
     width: 1200px;
     margin-top: 3rem;
@@ -879,7 +870,7 @@ padding: 3rem 3rem;
 }
 .att .box-container .my-box:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
+    transition: box-shadow 0.3s;
 }
 .att .box-container .my-box .rectangle{
     background: #0C6980;
@@ -896,6 +887,7 @@ padding: 3rem 3rem;
 .att .box-container .my-box h3{
     padding: 0.5rem 0.5rem;
     margin-top: 0.5rem;
+    color: #black;
     background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
@@ -931,3 +923,88 @@ padding: 3rem 3rem;
     transition: all 0.3s;
 }
 
+
+.rec{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+}
+
+.rec .nav-rec{
+    
+    height: 13vh;
+    background:white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-family: 'Poppins';
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rec .nav-rec h3{
+    
+    font-size: 27px;
+    font-weight: 100;
+    padding-left: 3rem;
+}
+.rec .all{
+    padding: 3rem 3rem;
+}
+.rec .all h3{
+    padding: 1rem 1rem;
+    background: none;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.rec .rec-container{
+    display: flex;
+}
+.rec .rec-container .rec-box{
+    margin: 0 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    
+}
+.rec .rec-container .rec-box:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+.rec .rec-container .rec-box h3{
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.rec .rec-container .rec-box .rec-student-pic{
+    height: 120px;
+    width: 120px;
+    margin-top: 2.8rem;
+    position: relative;
+}
+.rec .rec-container .rec-box .rec-student-pic img{
+    height: 100%;
+    width: 100%;
+}
+
+.rec .rec-container .rec-box .rec-tangle{
+    background: #0C6980;
+    position: absolute;
+    left: 33px;
+    top: 10px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+}

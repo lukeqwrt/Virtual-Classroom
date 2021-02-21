@@ -6,116 +6,26 @@ html{
     font-family:'Poppins';
     
 }
-.signout-container{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    }
-    
-    .signout-container.active{
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    
-    .signout-container .signout{
-        position: absolute;
-        right: 30px;
-        top: 90px;
-        height: 360px;
-        width: 350px;
-        background: white;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-        display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  repeat(4, 90px);
-    justify-items: center;
-    align-items: center;
-    }
-    .signout-container .signout .myprofile2{
-    height: 80px;
-    width: 80px;
-    }
-    .signout-container .signout .myprofile2 img{
-        height: 100%;
-        width: 100%;
-    }
-    .signout-container .signout .signout-content{
-        text-align: center;
-        align-self: center;
-        justify-self: center;
-    }
-    .signout-container .signout .signout-content h3:nth-child(1){
-        margin: 1.5rem;
-    }
-    .signout-container .signout .signout-content h3:nth-child(2){
-        color: gray;
-    }
-    .signout-container .signout h3:nth-child(3){
-        font-size: 21px;
-        cursor: pointer;
-        width: 80%;
-        color: black;
-        text-align: center;
-        border: 1px solid gray;
-        transition: all 0.3s;
-        border-radius: 40px;
-        padding: 0.3rem;
-    }
-    .signout-container .signout h3:nth-child(3):hover{
-        background: rgb(238, 238, 238);
-        border: 1px solid black;
-        transition: all 0.3s;
-    }
-    .signout-container .signout button{
-        width: 112px;
-        height: 40px;
-        border: none;
-        background: #0C6980;
-        color: white;
-        font-weight: 800;
-        letter-spacing: 2px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-    .signout-container .signout button:hover
-    {
-        color: white;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
-    }
+
 .my-header{
     height: 12vh;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .my-header .black-line{
     height: 15vh;
-    border-top: 3px solid blac;
-    border-bottom: 3px solid blck;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .my-header .black-line .gray-line{
-    height: 13vh;
-    border-top: 2px solid gra;
-    border-bottom: 2px solid ray;    
+    height: 13vh;  
     position: relative;
-
 
     display: flex;
     justify-content: space-between;
@@ -230,19 +140,7 @@ width: 80px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
 }
 
-.my-header .black-line .gray-line .header-content .fa-arrow-left{
-    color: #0C6980;
-    position: absolute;
-    left: 18px;
-    font-size: 28px;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-}
-.my-header .black-line .gray-line .header-content .fa-arrow-left:hover{
-color: #6abce6;
-transition: all 0.3s;
-}
+
 
 
 
@@ -474,29 +372,83 @@ display: flex;
   
 }
 
-.main{
-    height: 88vh;
+
+ .lec{
+    padding-bottom: 3rem;
+    /* padding: 0.5rem calc((100vw - 800px) / 2); */
+    margin: 3rem;
     display: flex;
     justify-content: center;
-    align-items: center;
 
 }
-.main .student-container{
-    display: flex;
-}
-.main .student-container .student{
-  
-    margin: 0 2rem;
-}
-.main .student-container .student .student-img{
-    height: 160px;
-    width: 200px;
-}
-.main .student-container .student .student-img img{
-    height: 100%;
-    width: 100%;
-}
-.main .student-container .student h3{
-    text-align: center;
+ .lec .lecact{
     background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    width: 1000px;
+    border-radius: 10px;
+    padding: 3rem 0;
+}
+
+ .lec .lecact .btn-create{
+    padding: 2rem 3rem;
+}
+ .lec .lecact .btn-create button{
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.2s ease;
+}
+ .lec .lecact .btn-create button:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+ .lec .lecact .activity{
+    padding: 0.7rem 0;
+}
+ .lec .lecact .activity .activity-child{
+margin: 0 3rem;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr;
+}
+ .lec .lecact .activity .activity-child i:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+    font-size: 40px;
+    justify-self: center;
+    padding: 1rem 0;
+    color: #0C6980;
+}
+ .lec .lecact .activity .activity-child .title-act{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+ .lec .lecact .activity .activity-child .title-act h3{
+    font-size: 25px;
+    padding-top: 0.7rem;
+}
+ .lec .lecact .activity .activity-child .title-act .other {
+    padding: 0.7rem 0;
+}
+ .lec .lecact .activity .activity-child .title-act .other p{
+    font-size: 16px;
+}
+
+ .lec .lecact .activity .activity-child i:nth-child(3){
+    color: #0C6980;
+    grid-column: 3/4;
+    font-size: 27px;
+    justify-self: center;
+    padding: 1rem 0;
+    color: #0C6980;
 }

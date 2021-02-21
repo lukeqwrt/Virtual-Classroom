@@ -33,7 +33,7 @@
            
             </div>
             <h3>Manage Your Account</h3>
-            <button>Sign Out</button>
+            <button onclick="window.location.href='/'">Sign Out</button>
         </div>
     </div>
     <div class="my-header">
@@ -75,10 +75,10 @@
     
     <div class="nav">
         <ul class="list">
-            <li data-tab-target="#announce" class="active tab">announce</li>
+            <li data-tab-target="#announce" class="active tab">Announcement</li>
             <li data-tab-target="#lec" class="tab">Lectures and Activities</li>
             <li data-tab-target="#att" class="tab">Attendance</li>
-            <li  data-tab-target="#rec" class="tab">Recitations</li>
+            <li  data-tab-target="#rec" class="tab">Recitation</li>
             <li  data-tab-target="#chat" class="tab">Chatroom</li>
             <!-- <li  data-tab-target="#grades" class="tab">Activities</li> -->
         </ul>
@@ -172,7 +172,7 @@
                 </div>
         </div>
         <div id="lec" class="lec"  data-tab-content>
-            <div class="sidebar">
+            <!-- <div class="sidebar">
                 <h3>To-Do</h3>
                 <p>Activity 1: Approaches to Inform System</p>
                 <p>Activity 2: Investigating System Requirements</p>
@@ -180,15 +180,58 @@
                 <p>Activity 4: GUI</p>
                 <p>MIDTERMS EXAM</p>
                 <p>FINAL EXAM</p>
-            </div>
+            </div> -->
 
             <div class="lecact">
-                <div class="nav">
-                    <ul>
-                        <li>Lectures</li>
-                        <li>Activities</li>
-                    </ul>
-                </div>
+               <div class="btn-create">
+                   <button>Create</button>
+               </div>
+
+               <div class="activity">
+                   <div class="activity-child">
+                        <i class="fas fa-paste"></i>
+                       <div class="title-act">
+                           <h3>Activity 1</h3>
+                           <div class="other">
+                            <p>Duration: 1hr</p>
+                            <p>Mins. Per Item: 1min</p>
+                            <p>Deadline: February 26, 2021 20:00</p>
+                        </div>
+                       </div>
+                      
+                       <i class="fas fa-ellipsis-v"></i>
+                   </div>
+               </div>
+               <div class="activity">
+                   <div class="activity-child">
+                        <i class="fas fa-paste"></i>
+                       <div class="title-act">
+                           <h3>Lecture 2</h3>
+                           <div class="other">
+                            <p>Duration: 2hr</p>
+                            <p>Mins. Per Item: 1min</p>
+                            <p>Deadline: February 15, 2021 20:00</p>
+                        </div>
+                       </div>
+                      
+                       <i class="fas fa-ellipsis-v"></i>
+                   </div>
+               </div>
+               <div class="activity">
+                   <div class="activity-child">
+                        <i class="fas fa-paste"></i>
+                       <div class="title-act">
+                           <h3>Lecture 1</h3>
+                           <div class="other">
+                            <p>Duration: 1hr</p>
+                            <p>Mins. Per Item: 1min</p>
+                            <p>Deadline: February 26, 2021 20:00</p>
+                        </div>
+                       </div>
+                      
+                       <i class="fas fa-ellipsis-v"></i>
+                   </div>
+               </div>
 
                 
             </div>
@@ -316,7 +359,51 @@
                       
             </div>
         </div>
-        <div id="rec"  data-tab-content>
+        <div id="rec" class="rec"  data-tab-content>
+            <div class="nav-rec">
+                <h3>Recitation</h3>
+            </div>
+            <div class="all">
+                <h3>All Students</h3>
+            </div>
+            <div class="rec-container">
+                <div class="rec-box">
+                        <div class="rec-tangle">
+                            <p>70%</p>
+                        </div>
+                        <div class="rec-student-pic">
+                            <img src="../img/avatar-pngrepo-com.png" alt="">
+                        </div>   
+                        <h3>Luke Adrian Sillano</h3> 
+                </div>
+                <div class="rec-box">
+                        <div class="rec-tangle">
+                            <p>70%</p>
+                        </div>
+                        <div class="rec-student-pic">
+                            <img src="../img/avatar-pngrepo-com.png" alt="">
+                        </div>   
+                        <h3>Luke Adrian Sillano</h3> 
+                </div>
+                <div class="rec-box">
+                        <div class="rec-tangle">
+                            <p>70%</p>
+                        </div>
+                        <div class="rec-student-pic">
+                            <img src="../img/avatar-pngrepo-com.png" alt="">
+                        </div>   
+                        <h3>Luke Adrian Sillano</h3> 
+                </div>
+                <div class="rec-box">
+                        <div class="rec-tangle">
+                            <p>70%</p>
+                        </div>
+                        <div class="rec-student-pic">
+                            <img src="../img/avatar-pngrepo-com.png" alt="">
+                        </div>   
+                        <h3>Luke Adrian Sillano</h3> 
+                </div>
+            </div>
         </div>
 
 
