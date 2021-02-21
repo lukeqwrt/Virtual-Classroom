@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family:'Poppins';
+    
+}
+
+.my-header{
+    height: 12vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.my-header .black-line{
+    height: 15vh;
+    border-top: 3px solid blac;
+    border-bottom: 3px solid blck;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-header .black-line .gray-line{
+    height: 13vh;
+    border-top: 2px solid gra;
+    border-bottom: 2px solid ray;    
+    position: relative;
+
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.my-header .black-line .gray-line .header-content{
+
+    height: 100%;
+    width: 91%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.my-header .black-line .gray-line .header-content .login-icon{
+    display: flex;
+    align-items: center;
+}
+
+.my-header .black-line .gray-line .header-content .login-icon i{
+    font-size: 28px;
+    margin: 0 1.5rem;
+    transition: 0.4s;
+    color: gray;
+}
+
+.signout-container{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.1);
+z-index: 99;
+opacity: 0;
+visibility: hidden;
+}
+
+.signout-container.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.signout-container .signout{
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    height: 360px;
+    width: 350px;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:  repeat(4, 90px);
+justify-items: center;
+align-items: center;
+}
+.signout-container .signout .myprofile2{
+height: 80px;
+width: 80px;
+}
+.signout-container .signout .myprofile2 img{
+    height: 100%;
+    width: 100%;
+}
+.signout-container .signout .signout-content{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+.signout-container .signout .signout-content h3:nth-child(1){
+    margin: 1.5rem;
+}
+.signout-container .signout .signout-content h3:nth-child(2){
+    color: gray;
+}
+.signout-container .signout h3:nth-child(3){
+    font-size: 21px;
+    cursor: pointer;
+    width: 80%;
+    color: black;
+    text-align: center;
+    border: 1px solid gray;
+    transition: all 0.3s;
+    border-radius: 40px;
+    padding: 0.3rem;
+}
+.signout-container .signout h3:nth-child(3):hover{
+    background: rgb(238, 238, 238);
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+.signout-container .signout button{
+    width: 112px;
+    height: 40px;
+    border: none;
+    background: #0C6980;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.signout-container .signout button:hover
+{
+    color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+}
+
+.my-header .black-line .gray-line .header-content .fa-arrow-left{
+    color: #0C6980;
+    position: absolute;
+    left: 18px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.my-header .black-line .gray-line .header-content .fa-arrow-left:hover{
+color: #6abce6;
+transition: all 0.3s;
+}
+
+
+
+.my-header .black-line .gray-line .header-content .login-icon i:hover{
+    color: #0C6980;
+    cursor: pointer;
+}
+.my-header .black-line .gray-line .header-content .login-icon .myprofile{
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+.my-header .black-line .gray-line .header-content .login-icon .myprofile img{
+    height: 100%;
+    width: 100%;
+}
+.my-header .black-line .gray-line .header-content .mycontent{
+display: flex;
+}
+.my-header .black-line .gray-line .header-content .mycontent .logo{
+    height: 60px;
+    width: 60px;
+
+   
+}
+.my-header .black-line .gray-line .header-content .mycontent .mybars{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.my-header .black-line .gray-line .header-content .mycontent .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.my-header .black-line .gray-line .header-content .mycontent .title{
+    margin-left: 1rem;
+
+}
+.my-header .black-line .gray-line .header-content .mycontent .title h3{
+    /* font-size: 40px; */
+    font-size: clamp(1rem, 4vw, 29px);
+    font-family: 'Poppins';
+    font-weight: 100;
+ color: black;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+}
+.my-header .black-line .gray-line .header-content .mycontent .title p{
+    color: black;
+    font-family: 'Poppins';
+
+}    
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+    .my-header .black-line .gray-line .header-content .mycontent .mybars{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: 100%;
+        width: 50px;
+        /* flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .my-header .black-line .gray-line .header-content .mycontent .mybars i{
+        font-size: 30px;
+        
+    }
+    .my-header .black-line .gray-line .header-content .mycontent .logo{
+        visibility: hidden;
+        opacity: 0;
+     
+        display: none;
+    }
+
+
+
+
+    .my-header .black-line .gray-line .header-content{
+        display: flex;
+        position: absolute;  
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+       }
+       .my-header .black-line .gray-line .header-content .title{
+        margin-left: 1rem;
+    
+    }
+    .my-header .black-line .gray-line .header-content{
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .my-header .black-line .gray-line .header-content .mycontent .mybars{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        height: 100%;
+        width: 50px;
+        /* flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .my-header .black-line .gray-line .header-content .mycontent .mybars i{
+        font-size: 30px;
+        
+    }
+    .my-header .black-line .gray-line .header-content .mycontent .logo{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .my-header .black-line .gray-line .header-content .login-icon i{
+        font-size: 30px;
+        margin: 0 0.4rem;
+    }
+    .my-header .black-line .gray-line .header-content{
+        display: flex;
+        position: absolute;  
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+       }
+       .my-header .black-line .gray-line .header-content .mycontent .title{
+        margin-left: 0.9rem;
+    
+    }
+    .my-header .black-line .gray-line .header-content{
+        margin: 0 1rem;
+    }
+    .my-header .black-line .gray-line .header-content .mycontent .logo{
+        height: 70px;
+        width: 70px;
+       
+    }
+    
+
+}
+
+.nav{
+    background: #0C6980;
+    height: 6vh;
+}
+
+.nav ul{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    }
+.nav ul li{
+    list-style: none;
+    padding: 0 2rem;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:'Poppins';
+    font-size: 17px;
+    transition: 0.3s;
+}
+.nav ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 768px){
+    .nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-family:'Poppins';
+        font-size: 17px;
+        transition: 0.3s;
+    }
+    .nav ul li a:hover{
+        color: #0C6980;
+        background: white;
+    }
+    .nav{
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav.active{
+
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+   }
+    .nav .list{
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        left: 0;
+        height: 100%;
+
+        width:0px;
+        display: grid;
+        grid-template-rows: repeat(4, 110px);
+        grid-template-columns: 1fr;
+        transition: 0.3s;
+    }
+    .nav.active .list{
+        position: fixed;
+        left: 0;
+       background: white;
+        width:320px;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+    }
+  
+}
+
+.main{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .student-container{
+    display: flex;
+}
+.main .student-container .student{
+    margin: 0 2rem;
+}
+.main .student-container .student .student-img{
+    height: 160px;
+    width: 200px;
+}
+.main .student-container .student .student-img img{
+    height: 100%;
+    width: 100%;
+}
+.main .student-container .student h3{
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}

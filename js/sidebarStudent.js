@@ -11,6 +11,7 @@ nav.addEventListener('click', ()=> {
 })
 
 
+
 const go = document.querySelector('.go')
 
 go.addEventListener('click', () => {
@@ -29,3 +30,4 @@ myprofile.addEventListener('click', () => {
 signout.addEventListener('click', ()=> {
     signout.classList.remove('active')
 })
+

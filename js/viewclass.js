@@ -16,6 +16,7 @@ for(let i = 0 ; i < all.length; i++) {
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const target = document.querySelector(tab.dataset.tabTarget)
@@ -28,7 +29,14 @@ tabs.forEach(tab => {
       })
       tab.classList.add('active')
       target.classList.add('active')
-     
+ 
+      // active
+ 
+
+ 
+      
+   
+
     })
   })
 
@@ -44,4 +52,3 @@ tabs.forEach(tab => {
   signout.addEventListener('click', ()=> {
       signout.classList.remove('active')
   })
-

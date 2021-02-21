@@ -74,14 +74,13 @@
     </div>
     
     <div class="nav">
-        
         <ul class="list">
             <li data-tab-target="#announce" class="active tab">announce</li>
-            <li data-tab-target="#lec" class="tab">Lecture</li>
-            <li data-tab-target="#chat" class="tab">Chat</li>
-            <li  data-tab-target="#att" class="tab">Attendance</li>
+            <li data-tab-target="#lec" class="tab">Lectures and Activities</li>
+            <li data-tab-target="#att" class="tab">Attendance</li>
             <li  data-tab-target="#rec" class="tab">Recitations</li>
-            <li  data-tab-target="#grades" class="tab">Activities</li>
+            <li  data-tab-target="#chat" class="tab">Chatroom</li>
+            <!-- <li  data-tab-target="#grades" class="tab">Activities</li> -->
         </ul>
     </div>
     <!-- <div class="nav">
@@ -220,7 +219,9 @@
 
                 <div class="input-message">
                     <div class="message-icon">
-                        <i class="fas fa-microphone"></i>
+                        <i class="fas fa-microphone">
+
+                        </i>
                         <i class="fas fa-camera"></i>   
                         <i class="fas fa-images"></i>
                     </div>
@@ -229,13 +230,95 @@
                 </div>
             </div>
         </div>
-        <div id="att"  data-tab-content>
+        <div id="att" class="att"  data-tab-content>
+
+            <div class="nav">
+                <h3>Attendance</h3>
+                <h4>Art Appreciation</h4>
+            </div>
+
+            <div class="mybtn">
+                <button>
+                    All Students
+                </button>
+    
+            </div>
+            
+          
+            <div class="box-container">
+               
+
+                <div class="my-box">
+                    <div class="choices">
+                        <p class="pinili">PRESENT</p>
+                        <p class="pinili">ABSENT</p>
+                        <p class="pinili">LATE</p>
+                        <p class="pinili">Excused</p>
+                        <div id="trigger" class="close">&times</div>
+                    </div>
+                    <div class="rectangle">
+                        <p class="palit"></p>
+                    </div>
+                    <div class="student-pic">
+                        <img src="../img/avatar-pngrepo-com.png" alt="">
+                    </div>   
+                    <h3>Luke Adrian Sillano</h3>
+                </div>  
+                <div class="my-box">
+                    <div class="choices">
+                        <p class="pinili">PRESENT</p>
+                        <p class="pinili">ABSENT</p>
+                        <p class="pinili">LATE</p>
+                        <p class="pinili">Excused</p>
+                        <div id="trigger" class="close" >&times</div>
+                    </div>
+                    <div class="rectangle">
+                        <p class="palit"></p>
+                    </div>
+                    <div class="student-pic">
+                        <img src="../img/avatar-pngrepo-com.png" alt="">
+                    </div>   
+                    <h3>Luke Adrian Sillano</h3>
+                </div>
+                <div id="open" class="my-box" >
+                    <div class="choices">
+                        <p class="pinili">PRESENT</p>
+                        <p class="pinili">ABSENT</p>
+                        <p class="pinili">LATE</p>
+                        <p class="pinili">Excused</p>
+                        <div id="trigger" class="close">&times</div>
+                    </div>
+                    <div class="rectangle">
+                        <p class="palit"></p>
+                    </div>
+                    <div class="student-pic">
+                        <img src="../img/avatar-pngrepo-com.png" alt="">
+                    </div>   
+                    <h3>Luke Adrian Sillano</h3>
+                </div>
+                <div class="my-box">
+                         <div class="choices">
+                        <p class="pinili">PRESENT</p>
+                        <p class="pinili">ABSENT</p>
+                        <p class="pinili">LATE</p>
+                        <p class="pinili">Excused</p>
+                        <div id="trigger" class="close">&times</div>
+                    </div>
+
+                    <div class="rectangle">
+                        <p class="palit"></p>
+                    </div>
+                    <div class="student-pic">
+                        <img src="../img/avatar-pngrepo-com.png" alt="">
+                    </div>   
+                    <h3>Luke Adrian Sillano</h3>
+                </div>
+                      
+            </div>
         </div>
         <div id="rec"  data-tab-content>
         </div>
-        <div id="grades"  data-tab-content>
-  
-        </div>
+
 
 
   
@@ -244,5 +327,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/viewclass.js"></script>
+    <script src="../js/hehe.js"></script>
 </body>
 </html>
