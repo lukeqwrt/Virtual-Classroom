@@ -474,29 +474,73 @@ display: flex;
   
 }
 
-.main{
-    height: 88vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+.main {
+    height: 90vh;
+    background: rgb(238, 238, 238);
+    display: grid;
+    grid-auto-flow: column;
 }
-.main .student-container{
-    display: flex;
+
+.student-contact{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  
+    padding: 3rem 0rem;
+    padding-left: 3rem;
 }
-.main .student-container .student{
-  cursor: pointer;
-    margin: 0 2rem;
-}
-.main .student-container .student .student-img{
-    height: 160px;
+
+.student-contact .student-img{
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    height: 200px;
     width: 200px;
 }
-.main .student-container .student .student-img img{
+.student-contact .student-img img{
     height: 100%;
     width: 100%;
 }
-.main .student-container .student h3{
+.student-contact .btn{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.student-contact .btn h3{
+padding-left: 2rem;
+}
+.main .wrap{
+}
+.main .wrap .classes{
+    padding: 3rem 0rem;
+    padding-left: 3rem;
+}
+
+.main .wrap .classes .title{
+    font-size: 20px;
+    padding: 0 1rem;
+}
+.main .wrap .classes .subj {
+    font-size: 17px;
+    background: red;
+    margin: 1rem 0;
+    width: 340px;
+    height: 100px;
+    color: black;
+    background: white;
+    padding: 0.5rem 1rem;
+}
+
+.grap table{
+    padding: 3rem 0;
+}
+
+.grap table th{
+    padding: 0 1.2rem;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border: 1px solid gray;
+}
+
+.grap table td{
+    text-align: center;
+    border: 1px solid gray;
 }
