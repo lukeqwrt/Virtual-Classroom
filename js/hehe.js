@@ -56,4 +56,71 @@ function ready(){
         })
 
         // rectangle.innerText = "hello"
+
+       
+
+        const recitationBox1 = document.querySelector('.trigger1')
+        const recitationBox2 = document.querySelector('.trigger2')
+        const recitationBox3 = document.querySelector('.trigger3')
+        const recitationBox4 = document.querySelector('.trigger4')
+        const myinput1 = document.querySelector('.input-container')
+        const myinput2 = document.querySelector('.input-container2')
+        const myinput3 = document.querySelector('.input-container3')
+        const myinput4 = document.querySelector('.input-container4')
+       
+        const submit1 = document.querySelector('.submit1')
+        const submit2 = document.querySelector('.submit2')
+        const submit3 = document.querySelector('.submit3')
+        const submit4 = document.querySelector('.submit4')
+        const input1 = document.querySelector('.input1')
+        const input2 = document.querySelector('.input2')
+        const input3 = document.querySelector('.input3')
+        const input4 = document.querySelector('.input4')
+      
+      
+      recitationBox1.addEventListener('click', () => {
+          myinput1.classList.add('active')
+
+          submit1.addEventListener('click', () => {
+            const myp = recitationBox1.getElementsByClassName('herepo')[0]
+            myp.innerText = input1.value
+
+            myinput1.classList.remove('active')
+          })
+      })
+      recitationBox2.addEventListener('click', () => {
+          myinput2.classList.add('active')
+
+          submit2.addEventListener('click', () => {
+            const myp = recitationBox2.getElementsByClassName('herepo1')[0]
+            myp.innerText = input2.value
+
+            myinput2.classList.remove('active')
+          })
+      })
+      recitationBox3.addEventListener('click', () => {
+          myinput3.classList.add('active')
+
+          submit3.addEventListener('click', () => {
+            const myp = recitationBox3.getElementsByClassName('herepo2')[0]
+            myp.innerText = input3.value
+
+            myinput3.classList.remove('active')
+          })
+      })
+      recitationBox4.addEventListener('click', () => {
+          myinput4.classList.add('active')
+
+          submit4.addEventListener('click', () => {
+            const myp = recitationBox4.getElementsByClassName('herepo3')[0]
+            myp.innerText = input4.value
+
+            myinput4.classList.remove('active')
+          })
+      })
+
+    
+        // myinput.addEventListener('click', () => {
+        //   alert('lumabas e')
+        // })
 }

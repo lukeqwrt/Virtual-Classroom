@@ -404,6 +404,10 @@ display: flex;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.2s ease;
 }
+.lec .lecact .btn-create button a{
+    color: white;
+    text-decoration: none;
+}
  .lec .lecact .btn-create button:hover{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease;
